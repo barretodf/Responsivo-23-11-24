@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0c097;
+    font-size: 1.2rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: rgb(84, 83, 83);
+    color: aliceblue;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+
+}
+
+li>a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+li>a:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+
+/* *****
+  main
+****** */
+h2 {
+    padding: 30px;
+    text-align: center;
+    color: rgb(120, 32, 32);
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.item {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+p {
+    text-align: center;
+    background-color: #5c3d2e2e;
+    padding: 5px;
+    color: #5C3D2E;
+    border-radius: 5px;
+    border: 1px solid #5C3D2E;
+}
+
+p:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+/* --------------Media Query------------------ */
+
+@media screen and (max-width: 880px) {
+    body {
+        background-color: #72FFFF;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    h1 {
+        padding: 15px;
+    }
+
+    h2 {
+        color: #5800FF;
+    }
+    p{
+        color: #5800FF;
+        border: 1px solid #5800FF;
+        background-color: #0095ff58;
+    }
+    img{
+        border: 1px solid #5800FF;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-color: #FC92E3;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 0;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        gap: 5px;
+
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    li>a {
+        display: block;
+        text-align: center;
+        border-radius: 0;
+    }
+    h1{
+        text-transform: uppercase;
+    }
+    h2 {
+        color: #480032;
+    }
+    p{
+        color: #480032;
+        border: 1px solid #480032;
+        background-color: #48003216;
+    }
+    img{
+        border: none
+    }
+}
